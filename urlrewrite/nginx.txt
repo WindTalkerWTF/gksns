@@ -1,0 +1,10 @@
+直接在对应的nginx的虚拟机配置里相关server里面添加
+location / {
+index index.html index.htm index.php;
+if (!-e $request_filename) { rewrite ^/(.*) /index.php?$1; }
+}
+
+或者直接在 location /{}里面添加
+if (!-e $request_filename) { rewrite ^/(.*) /index.php?$1; }
+
+其实就是zendframework1.1的nginx配置

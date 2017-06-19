@@ -1,0 +1,129 @@
+﻿
+.wrap {
+    background: none repeat scroll 0 0 #F9F9F9;
+    border-radius: 4px 4px 4px 4px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+.wrap h1 {
+    color: #333333;
+    font-size: 24px;
+}
+.in {
+    color: #6CB658;
+    font-size: 16px;
+}
+.in .in-big {
+    font-size: 22px;
+}
+.hide {
+    display: none;
+}
+.gform input, .gform label, .gform span {
+    font-size: 14px;
+    vertical-align: middle;
+}
+.gform .gform-box label {
+    display: block;
+    float: left;
+    margin-right: 15px;
+    text-align: right;
+    width: 70px;
+}
+.gform .gform-box .form-txt-vcode {
+    width: 6em;
+}
+.gform .greg-btn {
+    background: url("img/4-login_reg.png") no-repeat scroll 0 -120px transparent;
+    border: 0 none;
+    color: #FFFFFF;
+    height: 32px;
+    line-height: 32px;
+    margin-left: 85px;
+    text-align: center;
+    width: 128px;
+}
+.gform .gbtn-primary, .gform .gbtn-ext {
+    margin-left: 85px;
+}
+.gform-captcha {
+    display: inline;
+    margin: 0 10px;
+    vertical-align: middle;
+}
+.gform-forget_pw {
+    display: inline-block;
+    font-size: 12px;
+    margin: 10px 0 0 10px;
+    vertical-align: middle;
+}
+.side {
+    background: url("img/reg_side.png") no-repeat scroll 0 0 transparent;
+    height: 277px;
+}
+.side-connect {
+    margin: 30px 0;
+}
+.connect-sina, .connect-renren, .connect-qq {
+    background: url("img/4-button.png") repeat scroll 0 0 transparent;
+    display: block;
+    height: 40px;
+    margin-top: 10px;
+    outline: 0 none;
+    text-indent: -9999px;
+    width: 168px;
+}
+.connect-sina {
+    background-position: 0 -100px;
+}
+.connect-sina:active {
+    background-position: -168px -100px;
+}
+.connect-qq {
+    background-position: 0 -140px;
+}
+.connect-qq:active {
+    background-position: -168px -140px;
+}
+.connect-renren {
+    background-position: 0 -180px;
+}
+.connect-renren:active {
+    background-position: -168px -180px;
+}
+.check-success {
+    color: #6CB658;
+    margin-bottom: 10px;
+    margin-left: 85px;
+}
+.gform-rem {
+    margin-left: 92px;
+}
+.gform .gform-rem label {
+    display: inline;
+    float: none;
+    width: auto;
+}
+.reg-summary {
+    margin: 0 0 10px 85px;
+}
+.gform .login-password label {
+    width: 50px;
+}
+.gform .user-head {
+    float: left;
+    padding-left: 15px;
+}
+.gform .user-summary {
+    line-height: 1.5;
+    margin-left: 85px;
+}
+.msg-box p {
+    margin: 30px 0 0 50px;
+}
+.gmotto {
+    float: right;
+    height: 20px;
+    margin: 10px 30px 0 0;
+    width: 290px;
+}

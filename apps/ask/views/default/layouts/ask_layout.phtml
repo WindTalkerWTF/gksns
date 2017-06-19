@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title><?php echo $this->setseo($this->seo,"title");?>-Powered by gk.com</title>
+    <meta name="Keywords" content="<?php echo $this->setseo($this->seo,"keywords");?>"/>
+    <meta name="Description" content="<?php echo $this->setseo($this->seo,"descr");?>"/>
+<?php 
+echo $this->loadscript("style/css/gui.css");
+echo $this->loadscript("style/css/ask.css");
+?>   
+<link rel="shortcut icon" href="/res/favicon.ico" />
+</head>
+<body>
+    <div class="gcontainer search-page">
+<?php echo $this->header();?>
+<?php echo $this->layout()->content; ?>
+    </div>
+<?php echo $this->footer();?>
+</body>
+</html>

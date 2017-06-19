@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title><?php echo $this->setseo($this->seo,"title");?>-Powered by gk.com</title>
+    <meta name="Keywords" content="<?php echo $this->setseo($this->seo,"keywords");?>"/>
+    <meta name="Description" content="<?php echo $this->setseo($this->seo,"descr");?>"/>
+ <?php 
+echo $this->loadscript("style/css/gui.css");
+echo $this->loadscript("style/css/login-reg.css");
+?>   
+<link rel="shortcut icon" href="/res/favicon.ico" />
+<?php 
+echo $this->loadscript("js/jquery-1.7.2.min.js");
+echo $this->loadscript("js/easydialog/easydialog.min.js");
+echo $this->loadscript("js/easydialog/easydialog.css");
+echo $this->loadscript("js/util.js");
+?>
+</head>
+<body>
+    <div class="container">
+<?php echo $this->header();?>
+ <div class="wrap grow gmt60 gpack">
+  <?php echo $this->layout()->content; ?>  
+             <div class="gspan-7 gprefix-3 side">
+       <p>你还可以用第三方帐号登录</p>
+     <p>
+    <a href="<?php echo $this->url("qqlogin/do","user");?>" class="connect-qq">
+	用QQ帐号登录
+    </a></p>
+    <p>
+ <?php 
+	if($this->isLogin):	 
+ ?>
+    没有帐号？<a id="changeVcode" href="<?php echo $this->url("index/reg","user");?>">马上注册</a>
+ <?php else:?>
+     已有帐号？<a id="changeVcode" href="<?php echo $this->url("index/login","user");?>">马上登录</a>
+ <?php endif;?>
+    </p>
+
+
+            </div>
+        </div>
+     
+<div id="bdadm-624092" class="bottom-ads"></div>
+<?php echo $this->footer();?>
+    </div>
+    </body>
+</html>

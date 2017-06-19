@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+	<head>
+<title>后台管理系统</title>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<?php 
+echo $this->loadscript("bootstrap/css/bootstrap.min.css");
+echo $this->loadscript("bootstrap/css/bootstrap-responsive.min.css");
+echo $this->loadscript("asset/admin/admincp.css");
+echo $this->loadscript("js/jquery-1.7.2.min.js");
+echo $this->loadscript("js/jquery.cookie.js");
+echo $this->loadscript("js/easydialog/easydialog.min.js");
+echo $this->loadscript("js/easydialog/easydialog.css");
+echo $this->loadscript("/js/jquery-loading/jquery.loading.js");
+echo $this->loadscript("bootstrap/js/bootstrap.min.js");
+echo $this->loadscript("js/jquery.qtip.min.js");
+echo $this->loadscript("bootstrap/js/bootstrap.min.js");
+echo $this->loadscript("/js/util.js");
+?>
+<link rel="shortcut icon" href="/res/favicon.ico" />
+	</head>
+	<body >
+		<div id="main">
+<?php echo $this->layout()->content; ?> 
+		</div>
+	</body>
+<script>
+$(function(){
+	$(".pop_over").popover();
+});
+</script>
+</html>

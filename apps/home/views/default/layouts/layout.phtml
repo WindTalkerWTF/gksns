@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title><?php echo getSysData('site.config.seo.home.title');?>-Powered by gk.com</title>
+    <meta name="Keywords" content="<?php echo getSysData('site.config.seo.home.keywords');?>"/>
+    <meta name="Description" content="<?php echo getSysData('site.config.seo.home.descr');?>"/>
+    <meta property="qc:admins" content="3446246161006375" />
+ <?php 
+echo $this->loadscript("style/css/gui.css");
+echo $this->loadscript("style/css/index.css");
+?> 
+<link rel="shortcut icon" href="/res/favicon.ico" />
+</head>
+<body>
+    <div class="container">
+	<?php echo $this->header();?>
+ <?php echo $this->layout()->content; ?>       
+<div id="bdadm-624092" class="bottom-ads"></div>
+<?php echo $this->footer();?>
+    </div>
+    </body>
+</html>

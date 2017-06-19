@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: 
+Disallow: /apps
+Disallow: /configs
+Disallow: /data
+Disallow: /library
+Disallow: /shell

@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title><?php echo $this->setseo($this->seo,"title");?>-Powered by gk.com</title>
+    <meta name="Keywords" content="<?php echo $this->setseo($this->seo,"keywords");?>"/>
+    <meta name="Description" content="<?php echo $this->setseo($this->seo,"descr");?>"/>
+<?php 
+echo $this->loadscript("style/css/gui.css");
+echo $this->loadscript("style/css/group_setting.css");
+?>   
+<link rel="shortcut icon" href="/res/favicon.ico" />
+</head>
+<body>
+    <div class="container">
+<?php echo $this->header();?>
+        <div class="grow all-sites-page">
+<?php echo $this->layout()->content; ?>
+        </div>
+    </div>
+<?php echo $this->footer();?>
+</body>
+</html>
